@@ -8,7 +8,7 @@ A collection of packages to augment `testing` and support common patterns.
 
 ## Usage
 
-With Go modules enabled (go1.11+)
+With Go modules enabled[^1] (go1.11+)
 
 ```
 $ go get gotest.tools/v3
@@ -48,3 +48,5 @@ module paths pin to version `v2.3.0`.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+[^1]: If you are getting a `cannot find package "gotest.tools/v3"` error, you may be running `go get` from inside your `$GOPATH`, which may result in Go modules being disabled. In that case, running `GO111MODULE=on go get...` may resolve the issue.
